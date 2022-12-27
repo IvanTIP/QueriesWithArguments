@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cpr/cpr.h>
 #include <map>
+#include <vector>
 
 
 void getRequest (std::map<std::string, std::string> &arguments) {
@@ -20,8 +21,15 @@ void getRequest (std::map<std::string, std::string> &arguments) {
 }
 
 void postRequest (std::map<std::string, std::string> &arguments) {
-    cpr::Response r = cpr::Post(cpr::Url("http://httpbin.org/post"),
-                                cpr::Payload({{}}));;
+    std::vector<cpr::Pair> vec;
+    for (std::map<std::string, std::string>::iterator it = arguments.begin();it != arguments.end();it++ ) {
+        cpr::Pair pair(it->first, it->second);
+        vec.push_back(pair);
+    }
+    cpr::Response r;
+    std::vector<cpr::Pair>::iterator tt = vec.begin();
+    r = cpr::Post(cpr::Url("http://httpbin.org/post"),
+                  cpr::Payload({{}));
     std::cout << r.text;
 
 }
