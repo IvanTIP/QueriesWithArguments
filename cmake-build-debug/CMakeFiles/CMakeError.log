@@ -1,0 +1,2363 @@
+Performing C++ SOURCE FILE Test THREAD_SANITIZER_AVAILABLE failed with the following compile output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b080f/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b080f.dir\build.make CMakeFiles/cmTC_b080f.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b080f.dir/src.cxx.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -DTHREAD_SANITIZER_AVAILABLE  -fsanitize=thread -std=gnu++11 -o CMakeFiles\cmTC_b080f.dir\src.cxx.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_b080f.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_b080f.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_b080f.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_b080f.dir/objects.a @CMakeFiles\cmTC_b080f.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  -fsanitize=thread -Wl,--whole-archive CMakeFiles\cmTC_b080f.dir/objects.a -Wl,--no-whole-archive -o cmTC_b080f.exe -Wl,--out-implib,libcmTC_b080f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b080f.dir\linklibs.rsp
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -ltsan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_b080f.dir\build.make:100: cmTC_b080f.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_b080f/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ADDRESS_SANITIZER_AVAILABLE failed with the following compile output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2f5ba/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2f5ba.dir\build.make CMakeFiles/cmTC_2f5ba.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2f5ba.dir/src.cxx.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -DADDRESS_SANITIZER_AVAILABLE  -fsanitize=address -std=gnu++11 -o CMakeFiles\cmTC_2f5ba.dir\src.cxx.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_2f5ba.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2f5ba.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2f5ba.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_2f5ba.dir/objects.a @CMakeFiles\cmTC_2f5ba.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  -fsanitize=address -Wl,--whole-archive CMakeFiles\cmTC_2f5ba.dir/objects.a -Wl,--no-whole-archive -o cmTC_2f5ba.exe -Wl,--out-implib,libcmTC_2f5ba.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2f5ba.dir\linklibs.rsp
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lasan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2f5ba.dir\build.make:100: cmTC_2f5ba.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_2f5ba/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test ALL_SANITIZERS_AVAILABLE failed with the following compile output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_3fa5b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3fa5b.dir\build.make CMakeFiles/cmTC_3fa5b.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3fa5b.dir/src.cxx.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -DALL_SANITIZERS_AVAILABLE  -fsanitize=leak -fsanitize=undefined -std=gnu++11 -o CMakeFiles\cmTC_3fa5b.dir\src.cxx.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx
+Linking CXX executable cmTC_3fa5b.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3fa5b.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_3fa5b.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_3fa5b.dir/objects.a @CMakeFiles\cmTC_3fa5b.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE   -fsanitize=leak -fsanitize=undefined -Wl,--whole-archive CMakeFiles\cmTC_3fa5b.dir/objects.a -Wl,--no-whole-archive -o cmTC_3fa5b.exe -Wl,--out-implib,libcmTC_3fa5b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3fa5b.dir\linklibs.rsp
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -lubsan
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -llsan
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_3fa5b.dir\build.make:100: cmTC_3fa5b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_3fa5b/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+int main() { return 0; }
+Determining if the include file sys/sdt.h exists failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e1396/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e1396.dir\build.make CMakeFiles/cmTC_e1396.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1396.dir/CheckIncludeFile.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -Wall -Wno-implicit-fallthrough  -std=c99 -o CMakeFiles\cmTC_e1396.dir\CheckIncludeFile.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: No such file or directory
+ #include <sys/sdt.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e1396.dir\build.make:77: CMakeFiles/cmTC_e1396.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_e1396/fast] Error 2
+
+
+
+Determining if the function posix_memalign exists failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_df6a8/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_df6a8.dir\build.make CMakeFiles/cmTC_df6a8.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_df6a8.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=posix_memalign   -D _POSIX_C_SOURCE=200112L -std=c99 -o CMakeFiles\cmTC_df6a8.dir\CheckFunctionExists.c.obj -c "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_df6a8.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_df6a8.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_df6a8.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_df6a8.dir/objects.a @CMakeFiles\cmTC_df6a8.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -Wall -Wno-implicit-fallthrough -DCHECK_FUNCTION_EXISTS=posix_memalign -Wl,--whole-archive CMakeFiles\cmTC_df6a8.dir/objects.a -Wl,--no-whole-archive -o cmTC_df6a8.exe -Wl,--out-implib,libcmTC_df6a8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_df6a8.dir\linklibs.rsp
+CMakeFiles\cmTC_df6a8.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `posix_memalign'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_df6a8.dir\build.make:100: cmTC_df6a8.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_df6a8/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_HIDDEN failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_cdbd2/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_cdbd2.dir\build.make CMakeFiles/cmTC_cdbd2.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cdbd2.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -DHAVE_ATTRIBUTE_VISIBILITY_HIDDEN  -Wall -Wno-implicit-fallthrough  -std=c99 -o CMakeFiles\cmTC_cdbd2.dir\src.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:5:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+     }
+     ^
+Linking C executable cmTC_cdbd2.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_cdbd2.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_cdbd2.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_cdbd2.dir/objects.a @CMakeFiles\cmTC_cdbd2.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -Wall -Wno-implicit-fallthrough  -Wl,--whole-archive CMakeFiles\cmTC_cdbd2.dir/objects.a -Wl,--no-whole-archive -o cmTC_cdbd2.exe -Wl,--out-implib,libcmTC_cdbd2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_cdbd2.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("hidden")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Performing C SOURCE FILE Test HAVE_ATTRIBUTE_VISIBILITY_INTERNAL failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_244ac/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_244ac.dir\build.make CMakeFiles/cmTC_244ac.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_244ac.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -DHAVE_ATTRIBUTE_VISIBILITY_INTERNAL  -Wall -Wno-implicit-fallthrough  -std=c99 -o CMakeFiles\cmTC_244ac.dir\src.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:5:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+     }
+     ^
+Linking C executable cmTC_244ac.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_244ac.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_244ac.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_244ac.dir/objects.a @CMakeFiles\cmTC_244ac.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -Wall -Wno-implicit-fallthrough  -Wl,--whole-archive CMakeFiles\cmTC_244ac.dir/objects.a -Wl,--no-whole-archive -o cmTC_244ac.exe -Wl,--out-implib,libcmTC_244ac.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_244ac.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#define Z_INTERNAL __attribute__((visibility ("internal")))
+    int Z_INTERNAL foo;
+    int main() {
+        return 0;
+    }
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/filio.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_942dd/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_942dd.dir\build.make CMakeFiles/cmTC_942dd.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_942dd.dir/HAVE_SYS_FILIO_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_942dd.dir\HAVE_SYS_FILIO_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_FILIO_H.c:7:10: fatal error: sys/filio.h: No such file or directory
+ #include <sys/filio.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_942dd.dir\build.make:77: CMakeFiles/cmTC_942dd.dir/HAVE_SYS_FILIO_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_942dd/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/ioctl.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ccc50/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ccc50.dir\build.make CMakeFiles/cmTC_ccc50.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccc50.dir/HAVE_SYS_IOCTL_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_ccc50.dir\HAVE_SYS_IOCTL_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_IOCTL_H.c:7:10: fatal error: sys/ioctl.h: No such file or directory
+ #include <sys/ioctl.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_ccc50.dir\build.make:77: CMakeFiles/cmTC_ccc50.dir/HAVE_SYS_IOCTL_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_ccc50/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/resource.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2fff9/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2fff9.dir\build.make CMakeFiles/cmTC_2fff9.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fff9.dir/HAVE_SYS_RESOURCE_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_2fff9.dir\HAVE_SYS_RESOURCE_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_RESOURCE_H.c:7:10: fatal error: sys/resource.h: No such file or directory
+ #include <sys/resource.h>
+          ^~~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2fff9.dir\build.make:77: CMakeFiles/cmTC_2fff9.dir/HAVE_SYS_RESOURCE_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_2fff9/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/resource.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/uio.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_28ee8/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_28ee8.dir\build.make CMakeFiles/cmTC_28ee8.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28ee8.dir/HAVE_SYS_UIO_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_28ee8.dir\HAVE_SYS_UIO_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UIO_H.c:9:10: fatal error: sys/uio.h: No such file or directory
+ #include <sys/uio.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_28ee8.dir\build.make:77: CMakeFiles/cmTC_28ee8.dir/HAVE_SYS_UIO_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_28ee8/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/un.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_08b6a/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_08b6a.dir\build.make CMakeFiles/cmTC_08b6a.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08b6a.dir/HAVE_SYS_UN_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_08b6a.dir\HAVE_SYS_UN_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UN_H.c:9:10: fatal error: sys/un.h: No such file or directory
+ #include <sys/un.h>
+          ^~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_08b6a.dir\build.make:77: CMakeFiles/cmTC_08b6a.dir/HAVE_SYS_UN_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_08b6a/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/un.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;sys/xattr.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_7509f/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7509f.dir\build.make CMakeFiles/cmTC_7509f.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7509f.dir/HAVE_SYS_XATTR_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_7509f.dir\HAVE_SYS_XATTR_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_XATTR_H.c:10:10: fatal error: sys/xattr.h: No such file or directory
+ #include <sys/xattr.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_7509f.dir\build.make:77: CMakeFiles/cmTC_7509f.dir/HAVE_SYS_XATTR_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_7509f/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <sys/xattr.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;arpa/tftp.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_50d05/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_50d05.dir\build.make CMakeFiles/cmTC_50d05.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50d05.dir/HAVE_ARPA_TFTP_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_50d05.dir\HAVE_ARPA_TFTP_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_ARPA_TFTP_H.c:10:10: fatal error: arpa/tftp.h: No such file or directory
+ #include <arpa/tftp.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_50d05.dir\build.make:77: CMakeFiles/cmTC_50d05.dir/HAVE_ARPA_TFTP_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_50d05/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <arpa/tftp.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;idn2.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_35e88/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_35e88.dir\build.make CMakeFiles/cmTC_35e88.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35e88.dir/HAVE_IDN2_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_35e88.dir\HAVE_IDN2_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IDN2_H.c:13:10: fatal error: idn2.h: No such file or directory
+ #include <idn2.h>
+          ^~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_35e88.dir\build.make:77: CMakeFiles/cmTC_35e88.dir/HAVE_IDN2_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_35e88/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <idn2.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;ifaddrs.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a98ae/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a98ae.dir\build.make CMakeFiles/cmTC_a98ae.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a98ae.dir/HAVE_IFADDRS_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_a98ae.dir\HAVE_IFADDRS_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_IFADDRS_H.c:13:10: fatal error: ifaddrs.h: No such file or directory
+ #include <ifaddrs.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a98ae.dir\build.make:77: CMakeFiles/cmTC_a98ae.dir/HAVE_IFADDRS_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_a98ae/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <ifaddrs.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;krb.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_db1fe/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_db1fe.dir\build.make CMakeFiles/cmTC_db1fe.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db1fe.dir/HAVE_KRB_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_db1fe.dir\HAVE_KRB_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_KRB_H.c:14:10: fatal error: krb.h: No such file or directory
+ #include <krb.h>
+          ^~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_db1fe.dir\build.make:77: CMakeFiles/cmTC_db1fe.dir/HAVE_KRB_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_db1fe/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <krb.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;netinet/tcp.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_ccee6/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_ccee6.dir\build.make CMakeFiles/cmTC_ccee6.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccee6.dir/HAVE_NETINET_TCP_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_ccee6.dir\HAVE_NETINET_TCP_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_NETINET_TCP_H.c:16:10: fatal error: netinet/tcp.h: No such file or directory
+ #include <netinet/tcp.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_ccee6.dir\build.make:77: CMakeFiles/cmTC_ccee6.dir/HAVE_NETINET_TCP_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_ccee6/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <netinet/tcp.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file linux/tcp.h exists failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4d90a/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4d90a.dir\build.make CMakeFiles/cmTC_4d90a.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4d90a.dir/CheckIncludeFile.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_4d90a.dir\CheckIncludeFile.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c:1:10: fatal error: linux/tcp.h: No such file or directory
+ #include <linux/tcp.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4d90a.dir\build.make:77: CMakeFiles/cmTC_4d90a.dir/CheckIncludeFile.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_4d90a/fast] Error 2
+
+
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;pem.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_64309/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_64309.dir\build.make CMakeFiles/cmTC_64309.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64309.dir/HAVE_PEM_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_64309.dir\HAVE_PEM_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_PEM_H.c:16:10: fatal error: pem.h: No such file or directory
+ #include <pem.h>
+          ^~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_64309.dir\build.make:77: CMakeFiles/cmTC_64309.dir/HAVE_PEM_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_64309/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <pem.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;poll.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_374d4/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_374d4.dir\build.make CMakeFiles/cmTC_374d4.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_374d4.dir/HAVE_POLL_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_374d4.dir\HAVE_POLL_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_POLL_H.c:16:10: fatal error: poll.h: No such file or directory
+ #include <poll.h>
+          ^~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_374d4.dir\build.make:77: CMakeFiles/cmTC_374d4.dir/HAVE_POLL_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_374d4/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <poll.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;ssl.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_b11ce/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_b11ce.dir\build.make CMakeFiles/cmTC_b11ce.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b11ce.dir/HAVE_SSL_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_b11ce.dir\HAVE_SSL_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SSL_H.c:18:10: fatal error: ssl.h: No such file or directory
+ #include <ssl.h>
+          ^~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_b11ce.dir\build.make:77: CMakeFiles/cmTC_b11ce.dir/HAVE_SSL_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_b11ce/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <ssl.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;stropts.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8de03/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8de03.dir\build.make CMakeFiles/cmTC_8de03.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8de03.dir/HAVE_STROPTS_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_8de03.dir\HAVE_STROPTS_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_STROPTS_H.c:22:10: fatal error: stropts.h: No such file or directory
+ #include <stropts.h>
+          ^~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8de03.dir\build.make:77: CMakeFiles/cmTC_8de03.dir/HAVE_STROPTS_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_8de03/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stropts.h>
+
+
+int main(void){return 0;}
+
+Determining if files windows.h;ws2tcpip.h;winsock2.h;wincrypt.h;stdio.h;sys/stat.h;sys/types.h;sys/utime.h;assert.h;errno.h;fcntl.h;io.h;libgen.h;locale.h;setjmp.h;signal.h;stdbool.h;stdio.h;stdlib.h;string.h;time.h;process.h;stddef.h;malloc.h;memory.h;sys/utsname.h exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_a4e93/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_a4e93.dir\build.make CMakeFiles/cmTC_a4e93.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4e93.dir/HAVE_SYS_UTSNAME_H.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_a4e93.dir\HAVE_SYS_UTSNAME_H.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckIncludeFiles\HAVE_SYS_UTSNAME_H.c:27:10: fatal error: sys/utsname.h: No such file or directory
+ #include <sys/utsname.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_a4e93.dir\build.make:77: CMakeFiles/cmTC_a4e93.dir/HAVE_SYS_UTSNAME_H.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_a4e93/fast] Error 2
+
+
+Source:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+#include <sys/utsname.h>
+
+
+int main(void){return 0;}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_69ddd/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_69ddd.dir\build.make CMakeFiles/cmTC_69ddd.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_69ddd.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_69ddd.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'strncmpi' undeclared (first use in this function); did you mean 'strcmpi'?
+   return ((int*)(&strncmpi))[argc];
+                   ^~~~~~~~
+                   strcmpi
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_69ddd.dir\build.make:77: CMakeFiles/cmTC_69ddd.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_69ddd/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the alarm exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_edc87/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_edc87.dir\build.make CMakeFiles/cmTC_edc87.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_edc87.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_edc87.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'alarm' undeclared (first use in this function)
+   return ((int*)(&alarm))[argc];
+                   ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_edc87.dir\build.make:77: CMakeFiles/cmTC_edc87.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_edc87/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef alarm
+  return ((int*)(&alarm))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getppid exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_bc44c/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_bc44c.dir\build.make CMakeFiles/cmTC_bc44c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bc44c.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_bc44c.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'getppid' undeclared (first use in this function); did you mean 'getpid'?
+   return ((int*)(&getppid))[argc];
+                   ^~~~~~~
+                   getpid
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_bc44c.dir\build.make:77: CMakeFiles/cmTC_bc44c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_bc44c/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getppid
+  return ((int*)(&getppid))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the utimes exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_f6e2a/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f6e2a.dir\build.make CMakeFiles/cmTC_f6e2a.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f6e2a.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_f6e2a.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'utimes' undeclared (first use in this function); did you mean 'utime'?
+   return ((int*)(&utimes))[argc];
+                   ^~~~~~
+                   utime
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f6e2a.dir\build.make:77: CMakeFiles/cmTC_f6e2a.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_f6e2a/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef utimes
+  return ((int*)(&utimes))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getpwuid_r exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_7930b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7930b.dir\build.make CMakeFiles/cmTC_7930b.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7930b.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_7930b.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'getpwuid_r' undeclared (first use in this function); did you mean 'getpid'?
+   return ((int*)(&getpwuid_r))[argc];
+                   ^~~~~~~~~~
+                   getpid
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_7930b.dir\build.make:77: CMakeFiles/cmTC_7930b.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_7930b/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpwuid_r
+  return ((int*)(&getpwuid_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the usleep exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2335c/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2335c.dir\build.make CMakeFiles/cmTC_2335c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2335c.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_2335c.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'usleep' undeclared (first use in this function); did you mean '_sleep'?
+   return ((int*)(&usleep))[argc];
+                   ^~~~~~
+                   _sleep
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2335c.dir\build.make:77: CMakeFiles/cmTC_2335c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_2335c/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef usleep
+  return ((int*)(&usleep))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_r exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8195e/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8195e.dir\build.make CMakeFiles/cmTC_8195e.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8195e.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_8195e.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'strerror_r' undeclared (first use in this function); did you mean 'strerror_s'?
+   return ((int*)(&strerror_r))[argc];
+                   ^~~~~~~~~~
+                   strerror_s
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8195e.dir\build.make:77: CMakeFiles/cmTC_8195e.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_8195e/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_r
+  return ((int*)(&strerror_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the siginterrupt exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_70bb8/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_70bb8.dir\build.make CMakeFiles/cmTC_70bb8.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_70bb8.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_70bb8.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'siginterrupt' undeclared (first use in this function)
+   return ((int*)(&siginterrupt))[argc];
+                   ^~~~~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_70bb8.dir\build.make:77: CMakeFiles/cmTC_70bb8.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_70bb8/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef siginterrupt
+  return ((int*)(&siginterrupt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the pipe exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_728ba/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_728ba.dir\build.make CMakeFiles/cmTC_728ba.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_728ba.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_728ba.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'pipe' undeclared (first use in this function); did you mean '_pipe'?
+   return ((int*)(&pipe))[argc];
+                   ^~~~
+                   _pipe
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_728ba.dir\build.make:77: CMakeFiles/cmTC_728ba.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_728ba/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pipe
+  return ((int*)(&pipe))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ftruncate exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_14bfd/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_14bfd.dir\build.make CMakeFiles/cmTC_14bfd.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14bfd.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_14bfd.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'ftruncate' undeclared (first use in this function); did you mean 'strncat'?
+   return ((int*)(&ftruncate))[argc];
+                   ^~~~~~~~~
+                   strncat
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_14bfd.dir\build.make:77: CMakeFiles/cmTC_14bfd.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_14bfd/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ftruncate
+  return ((int*)(&ftruncate))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the if_nametoindex exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_724b3/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_724b3.dir\build.make CMakeFiles/cmTC_724b3.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_724b3.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_724b3.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'if_nametoindex' undeclared (first use in this function)
+   return ((int*)(&if_nametoindex))[argc];
+                   ^~~~~~~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_724b3.dir\build.make:77: CMakeFiles/cmTC_724b3.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_724b3/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef if_nametoindex
+  return ((int*)(&if_nametoindex))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the getrlimit exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_60ca9/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_60ca9.dir\build.make CMakeFiles/cmTC_60ca9.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60ca9.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_60ca9.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'getrlimit' undeclared (first use in this function)
+   return ((int*)(&getrlimit))[argc];
+                   ^~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_60ca9.dir\build.make:77: CMakeFiles/cmTC_60ca9.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_60ca9/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getrlimit
+  return ((int*)(&getrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the setrlimit exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_97c2c/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_97c2c.dir\build.make CMakeFiles/cmTC_97c2c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97c2c.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_97c2c.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'setrlimit' undeclared (first use in this function)
+   return ((int*)(&setrlimit))[argc];
+                   ^~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_97c2c.dir\build.make:77: CMakeFiles/cmTC_97c2c.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_97c2c/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setrlimit
+  return ((int*)(&setrlimit))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fcntl exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_fc215/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_fc215.dir\build.make CMakeFiles/cmTC_fc215.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc215.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_fc215.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'fcntl' undeclared (first use in this function); did you mean 'fcvt'?
+   return ((int*)(&fcntl))[argc];
+                   ^~~~~
+                   fcvt
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_fc215.dir\build.make:77: CMakeFiles/cmTC_fc215.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_fc215/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fcntl
+  return ((int*)(&fcntl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the ioctl exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_e3071/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_e3071.dir\build.make CMakeFiles/cmTC_e3071.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3071.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_e3071.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'ioctl' undeclared (first use in this function)
+   return ((int*)(&ioctl))[argc];
+                   ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_e3071.dir\build.make:77: CMakeFiles/cmTC_e3071.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_e3071/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctl
+  return ((int*)(&ioctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function mach_absolute_time exists failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d9eee/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d9eee.dir\build.make CMakeFiles/cmTC_d9eee.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9eee.dir/CheckFunctionExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DCHECK_FUNCTION_EXISTS=mach_absolute_time    -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_d9eee.dir\CheckFunctionExists.c.obj -c "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\share\cmake-3.20\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_d9eee.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d9eee.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d9eee.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d9eee.dir/objects.a @CMakeFiles\cmTC_d9eee.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DCHECK_FUNCTION_EXISTS=mach_absolute_time -Wl,--whole-archive CMakeFiles\cmTC_d9eee.dir/objects.a -Wl,--no-whole-archive -o cmTC_d9eee.exe -Wl,--out-implib,libcmTC_d9eee.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d9eee.dir\linklibs.rsp
+CMakeFiles\cmTC_d9eee.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0x15): undefined reference to `mach_absolute_time'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d9eee.dir\build.make:100: cmTC_d9eee.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_d9eee/fast] Error 2
+
+
+
+Determining if the fsetxattr exist failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_4c6a4/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4c6a4.dir\build.make CMakeFiles/cmTC_4c6a4.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c6a4.dir/CheckSymbolExists.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_4c6a4.dir\CheckSymbolExists.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c
+In file included from C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h:17,
+                 from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: error: 'fsetxattr' undeclared (first use in this function); did you mean 'fstat'?
+   return ((int*)(&fsetxattr))[argc];
+                   ^~~~~~~~~
+                   fstat
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:32:19: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\CheckSymbolExists.c:28:14: warning: parameter 'argc' set but not used [-Wunused-but-set-parameter]
+ int main(int argc, char** argv)
+          ~~~~^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_4c6a4.dir\build.make:77: CMakeFiles/cmTC_4c6a4.dir/CheckSymbolExists.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_4c6a4/fast] Error 2
+
+
+File D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <windows.h>
+#include <ws2tcpip.h>
+#include <winsock2.h>
+#include <wincrypt.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/utime.h>
+#include <assert.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <io.h>
+#include <libgen.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <process.h>
+#include <stddef.h>
+#include <malloc.h>
+#include <memory.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fsetxattr
+  return ((int*)(&fsetxattr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of sa_family_t failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_41fed/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_41fed.dir\build.make CMakeFiles/cmTC_41fed.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41fed.dir/SIZEOF_SA_FAMILY_T.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_41fed.dir\SIZEOF_SA_FAMILY_T.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_SA_FAMILY_T.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_SA_FAMILY_T.c:3:10: fatal error: sys/socket.h: No such file or directory
+ #include "sys/socket.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_41fed.dir\build.make:77: CMakeFiles/cmTC_41fed.dir/SIZEOF_SA_FAMILY_T.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_41fed/fast] Error 2
+
+
+D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_SA_FAMILY_T.c:
+#include <sys/types.h>
+#include <stddef.h>
+#include "sys/socket.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(sa_family_t))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of ADDRESS_FAMILY failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_09075/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_09075.dir\build.make CMakeFiles/cmTC_09075.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09075.dir/SIZEOF_ADDRESS_FAMILY.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_09075.dir\SIZEOF_ADDRESS_FAMILY.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_ADDRESS_FAMILY.c
+In file included from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_ADDRESS_FAMILY.c:3:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2def.h:31:2: error: unknown type name 'ULONG'
+  ULONG Zone : 28;
+  ^~~~~
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2def.h:32:2: error: unknown type name 'ULONG'
+  ULONG Level : 4;
+  ^~~~~
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/ws2def.h:34:5: error: unknown type name 'ULONG'
+     ULONG Value;
+     ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_ADDRESS_FAMILY.c:27:22: error: 'ADDRESS_FAMILY' undeclared here (not in a function); did you mean 'WINAPI_FAMILY'?
+ #define SIZE (sizeof(ADDRESS_FAMILY))
+                      ^~~~~~~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CheckTypeSize\SIZEOF_ADDRESS_FAMILY.c:29:12: note: in expansion of macro 'SIZE'
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_09075.dir\build.make:77: CMakeFiles/cmTC_09075.dir/SIZEOF_ADDRESS_FAMILY.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_09075/fast] Error 2
+
+
+D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_ADDRESS_FAMILY.c:
+#include <sys/types.h>
+#include <stddef.h>
+#include "ws2def.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(ADDRESS_FAMILY))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing Curl Test HAVE_FCNTL_O_NONBLOCK failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_c64b2/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_c64b2.dir\build.make CMakeFiles/cmTC_c64b2.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c64b2.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_FCNTL_O_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_c64b2.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:64:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:68:15: warning: implicit declaration of function 'fcntl' [-Wimplicit-function-declaration]
+       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+               ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:68:15: warning: nested extern declaration of 'fcntl' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:68:24: error: 'F_SETFL' undeclared (first use in this function)
+       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+                        ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:68:24: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:68:41: error: 'O_NONBLOCK' undeclared (first use in this function)
+       if(0 != fcntl(0, F_SETFL, flags | O_NONBLOCK))
+                                         ^~~~~~~~~~
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_c64b2.dir\build.make:77: CMakeFiles/cmTC_c64b2.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_c64b2/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_eaeb6/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_eaeb6.dir\build.make CMakeFiles/cmTC_eaeb6.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eaeb6.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_eaeb6.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:261:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:265:13: warning: implicit declaration of function 'IoctlSocket'; did you mean 'ioctlsocket'? [-Wimplicit-function-declaration]
+     if(0 != IoctlSocket(0, 0, 0))
+             ^~~~~~~~~~~
+             ioctlsocket
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:265:13: warning: nested extern declaration of 'IoctlSocket' [-Wnested-externs]
+Linking C executable cmTC_eaeb6.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_eaeb6.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_eaeb6.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_eaeb6.dir/objects.a @CMakeFiles\cmTC_eaeb6.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_eaeb6.dir/objects.a -Wl,--no-whole-archive -o cmTC_eaeb6.exe -Wl,--out-implib,libcmTC_eaeb6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_eaeb6.dir\linklibs.rsp
+CMakeFiles\cmTC_eaeb6.dir/objects.a(CurlTests.c.obj):CurlTests.c:(.text+0x1e): undefined reference to `IoctlSocket'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_eaeb6.dir\build.make:100: cmTC_eaeb6.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_eaeb6/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8127b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_8127b.dir\build.make CMakeFiles/cmTC_8127b.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8127b.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_8127b.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:284:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:289:17: warning: implicit declaration of function 'IoctlSocket'; did you mean 'ioctlsocket'? [-Wimplicit-function-declaration]
+         if(0 != IoctlSocket(0, FIONBIO, &flags))
+                 ^~~~~~~~~~~
+                 ioctlsocket
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:289:17: warning: nested extern declaration of 'IoctlSocket' [-Wnested-externs]
+Linking C executable cmTC_8127b.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8127b.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_8127b.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_8127b.dir/objects.a @CMakeFiles\cmTC_8127b.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_8127b.dir/objects.a -Wl,--no-whole-archive -o cmTC_8127b.exe -Wl,--out-implib,libcmTC_8127b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8127b.dir\linklibs.rsp
+CMakeFiles\cmTC_8127b.dir/objects.a(CurlTests.c.obj):CurlTests.c:(.text+0x26): undefined reference to `IoctlSocket'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_8127b.dir\build.make:100: cmTC_8127b.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_8127b/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTL_FIONBIO failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_78077/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_78077.dir\build.make CMakeFiles/cmTC_78077.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_78077.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_FIONBIO  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_78077.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:339:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:343:17: warning: implicit declaration of function 'ioctl' [-Wimplicit-function-declaration]
+         if(0 != ioctl(0, FIONBIO, &flags))
+                 ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:343:17: warning: nested extern declaration of 'ioctl' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:343:26: error: 'FIONBIO' undeclared (first use in this function)
+         if(0 != ioctl(0, FIONBIO, &flags))
+                          ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:343:26: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_78077.dir\build.make:77: CMakeFiles/cmTC_78077.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_78077/fast] Error 2
+
+
+Performing Curl Test HAVE_IOCTL_SIOCGIFADDR failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_08f1c/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_08f1c.dir\build.make CMakeFiles/cmTC_08f1c.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08f1c.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_IOCTL_SIOCGIFADDR  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_08f1c.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:368:10: fatal error: net/if.h: No such file or directory
+ #include <net/if.h>
+          ^~~~~~~~~~
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_08f1c.dir\build.make:77: CMakeFiles/cmTC_08f1c.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_08f1c/fast] Error 2
+
+
+Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_13385/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_13385.dir\build.make CMakeFiles/cmTC_13385.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_13385.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_13385.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:402:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main ()
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:404:43: error: 'SO_NONBLOCK' undeclared (first use in this function); did you mean 'SMTO_BLOCK'?
+         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
+                                           ^~~~~~~~~~~
+                                           SMTO_BLOCK
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:404:43: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_13385.dir\build.make:77: CMakeFiles/cmTC_13385.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_13385/fast] Error 2
+
+
+Performing Curl Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d82cc/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d82cc.dir\build.make CMakeFiles/cmTC_d82cc.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d82cc.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_d82cc.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:516: warning: ISO C forbids an empty translation unit [-Wpedantic]
+ #endif
+ 
+Linking C executable cmTC_d82cc.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d82cc.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_d82cc.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_d82cc.dir/objects.a @CMakeFiles\cmTC_d82cc.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_d82cc.dir/objects.a -Wl,--no-whole-archive -o cmTC_d82cc.exe -Wl,--out-implib,libcmTC_d82cc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_d82cc.dir\linklibs.rsp
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text.startup+0x2e): undefined reference to `WinMain'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d82cc.dir\build.make:100: cmTC_d82cc.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_d82cc/fast] Error 2
+
+
+Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_efd59/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_efd59.dir\build.make CMakeFiles/cmTC_efd59.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_efd59.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_GLIBC_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_efd59.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:414:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+ void check(char c) {}
+      ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'check':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:414:17: warning: unused parameter 'c' [-Wunused-parameter]
+ void check(char c) {}
+            ~~~~~^
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: At top level:
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:417:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main () {
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:420:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+         ^~~~~~~~~~
+         strerror_s
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:420:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:420:51: error: subscripted value is neither array nor pointer nor vector
+   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
+                                                   ^
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_efd59.dir\build.make:77: CMakeFiles/cmTC_efd59.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_efd59/fast] Error 2
+
+
+Performing Curl Test HAVE_POSIX_STRERROR_R failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_2c4b3/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2c4b3.dir\build.make CMakeFiles/cmTC_2c4b3.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c4b3.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_POSIX_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_2c4b3.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:429:6: warning: no previous prototype for 'check' [-Wmissing-prototypes]
+ void check(float f) {}
+      ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'check':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:429:18: warning: unused parameter 'f' [-Wunused-parameter]
+ void check(float f) {}
+            ~~~~~~^
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: At top level:
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:432:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main () {
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:435:9: warning: implicit declaration of function 'strerror_r'; did you mean 'strerror_s'? [-Wimplicit-function-declaration]
+   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+         ^~~~~~~~~~
+         strerror_s
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:435:9: warning: nested extern declaration of 'strerror_r' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:435:9: warning: conversion from 'int' to 'float' may change value [-Wconversion]
+   check(strerror_r(EACCES, buffer, sizeof(buffer)));
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_2c4b3.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2c4b3.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2c4b3.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_2c4b3.dir/objects.a @CMakeFiles\cmTC_2c4b3.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_POSIX_STRERROR_R  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -Wl,--whole-archive CMakeFiles\cmTC_2c4b3.dir/objects.a -Wl,--no-whole-archive -o cmTC_2c4b3.exe -Wl,--out-implib,libcmTC_2c4b3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2c4b3.dir\linklibs.rsp
+CMakeFiles\cmTC_2c4b3.dir/objects.a(CurlTests.c.obj):CurlTests.c:(.text+0x34): undefined reference to `strerror_r'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_2c4b3.dir\build.make:100: cmTC_2c4b3.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_2c4b3/fast] Error 2
+
+
+Performing Curl Test HAVE_BUILTIN_AVAILABLE failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_d0543/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_d0543.dir\build.make CMakeFiles/cmTC_d0543.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0543.dir/CurlTests.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe   -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format -DHAVE_BUILTIN_AVAILABLE  -DHAVE_WINDOWS_H -DHAVE_WS2TCPIP_H -DHAVE_WINSOCK2_H -DHAVE_WINCRYPT_H -DHAVE_STDIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UTIME_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IO_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_TIME_H -DHAVE_PROCESS_H -DHAVE_STDDEF_H -DHAVE_MALLOC_H -DHAVE_MEMORY_H -o CMakeFiles\cmTC_d0543.dir\CurlTests.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:466:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ main() {
+ ^~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:467:6: warning: implicit declaration of function '__builtin_available'; did you mean '__builtin_scalbl'? [-Wimplicit-function-declaration]
+   if(__builtin_available(macOS 10.12, *)) {}
+      ^~~~~~~~~~~~~~~~~~~
+      __builtin_scalbl
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:467:6: warning: nested extern declaration of '__builtin_available' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:467:26: error: 'macOS' undeclared (first use in this function)
+   if(__builtin_available(macOS 10.12, *)) {}
+                          ^~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:467:26: note: each undeclared identifier is reported only once for each function it appears in
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\_deps\curl-src\CMake\CurlTests.c:467:31: error: expected ')' before numeric constant
+   if(__builtin_available(macOS 10.12, *)) {}
+                               ^~~~~~
+                               )
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_d0543.dir\build.make:77: CMakeFiles/cmTC_d0543.dir/CurlTests.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_d0543/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_MSG_NOSIGNAL failed with the following output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_0af0b/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_0af0b.dir\build.make CMakeFiles/cmTC_0af0b.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0af0b.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -DHAVE_MSG_NOSIGNAL @CMakeFiles/cmTC_0af0b.dir/includes_C.rsp -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_0af0b.dir\src.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+In file included from D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:2:
+C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/x86_64-w64-mingw32/include/winsock2.h:15:2: warning: #warning Please include winsock2.h before windows.h [-Wcpp]
+ #warning Please include winsock2.h before windows.h
+  ^~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:8:16: error: 'MSG_NOSIGNAL' undeclared (first use in this function); did you mean 'MM_MCISIGNAL'?
+     int flag = MSG_NOSIGNAL;
+                ^~~~~~~~~~~~
+                MM_MCISIGNAL
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:8:16: note: each undeclared identifier is reported only once for each function it appears in
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_0af0b.dir\build.make:78: CMakeFiles/cmTC_0af0b.dir/src.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_0af0b/fast] Error 2
+
+
+Source file was:
+#undef inline
+#include <winsock2.h>
+#include <windows.h>
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN
+#endif
+  int main(void) {
+    int flag = MSG_NOSIGNAL;
+    (void)flag;
+    return 0;
+  }
+Performing C SOURCE FILE Test HAVE_POLL_FINE failed with the following compile output:
+Change Dir: D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f Makefile cmTC_6d1ad/fast && C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_6d1ad.dir\build.make CMakeFiles/cmTC_6d1ad.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6d1ad.dir/src.c.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -DHAVE_POLL_FINE @CMakeFiles/cmTC_6d1ad.dir/includes_C.rsp -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format     -D_WIN32_WINNT=0x0600 -D_WINSOCKAPI_= -DSECURITY_WIN32 -o CMakeFiles\cmTC_6d1ad.dir\src.c.obj -c D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:7:12: warning: "HAVE_POLL_H" is not defined, evaluates to 0 [-Wundef]
+     #elif  HAVE_POLL_H
+            ^~~~~~~~~~~
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c: In function 'main':
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:13:17: warning: implicit declaration of function 'poll'; did you mean 'wtoll'? [-Wimplicit-function-declaration]
+         if(0 != poll(0, 0, 10)) {
+                 ^~~~
+                 wtoll
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:13:17: warning: nested extern declaration of 'poll' [-Wnested-externs]
+D:\SkillboxProjects\cpr\ex3\cmake-build-debug\CMakeFiles\CMakeTmp\src.c:19:15: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+           int rc;
+               ^~
+Linking C executable cmTC_6d1ad.exe
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6d1ad.dir\link.txt --verbose=1
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_6d1ad.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\cmTC_6d1ad.dir/objects.a @CMakeFiles\cmTC_6d1ad.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe  -pedantic -Wall -W -Wpointer-arith -Wwrite-strings -Wunused -Wshadow -Winline -Wnested-externs -Wmissing-declarations -Wmissing-prototypes -Wfloat-equal -Wsign-compare -Wundef -Wendif-labels -Wstrict-prototypes -Wdeclaration-after-statement -Wstrict-aliasing=3 -Wcast-align -Wtype-limits -Wold-style-declaration -Wmissing-parameter-type -Wempty-body -Wclobbered -Wignored-qualifiers -Wconversion -Wvla -Wdouble-promotion -Wno-long-long -Wno-multichar -Wno-format-nonliteral -Wno-sign-conversion -Wno-system-headers -Wno-pedantic-ms-format  -Wl,--whole-archive CMakeFiles\cmTC_6d1ad.dir/objects.a -Wl,--no-whole-archive -o cmTC_6d1ad.exe -Wl,--out-implib,libcmTC_6d1ad.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_6d1ad.dir\linklibs.rsp
+CMakeFiles\cmTC_6d1ad.dir/objects.a(src.c.obj):src.c:(.text+0x1e): undefined reference to `poll'
+CMakeFiles\cmTC_6d1ad.dir/objects.a(src.c.obj):src.c:(.text+0x4f): undefined reference to `poll'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_6d1ad.dir\build.make:101: cmTC_6d1ad.exe] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/SkillboxProjects/cpr/ex3/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_6d1ad/fast] Error 2
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+    #include <stdlib.h>
+    #include <sys/time.h>
+
+    #ifdef HAVE_SYS_POLL_H
+    #  include <sys/poll.h>
+    #elif  HAVE_POLL_H
+    #  include <poll.h>
+    #endif
+
+    int main(void)
+    {
+        if(0 != poll(0, 0, 10)) {
+          return 1; /* fail */
+        }
+        else {
+          /* detect the 10.12 poll() breakage */
+          struct timeval before, after;
+          int rc;
+          size_t us;
+
+          gettimeofday(&before, NULL);
+          rc = poll(NULL, 0, 500);
+          gettimeofday(&after, NULL);
+
+          us = (after.tv_sec - before.tv_sec) * 1000000 +
+            (after.tv_usec - before.tv_usec);
+
+          if(us < 400000) {
+            return 1;
+          }
+        }
+        return 0;
+    }
