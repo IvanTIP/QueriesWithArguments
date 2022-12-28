@@ -3,7 +3,6 @@
 #include <map>
 #include <vector>
 
-
 void getRequest (std::map<std::string, std::string> &arguments) {
     std::string url = "http://httpbin.org/get?";
     for (std::map<std::string, std::string>::iterator it = arguments.begin();;) {
@@ -26,12 +25,9 @@ void postRequest (std::map<std::string, std::string> &arguments) {
         cpr::Pair pair(it->first, it->second);
         vec.push_back(pair);
     }
-    cpr::Response r;
-    std::vector<cpr::Pair>::iterator tt = vec.begin();
-    r = cpr::Post(cpr::Url("http://httpbin.org/post"),
-                  cpr::Payload({{}));
+    cpr::Response r = cpr::Post(cpr::Url("http://httpbin.org/post"),
+                               cpr::Payload(vec.begin(), vec.end()));
     std::cout << r.text;
-
 }
 
 int getArg (std::map<std::string, std::string> &arguments) {
@@ -57,6 +53,5 @@ int main() {
     } else {
         postRequest(arguments);
     }
-
     return 0;
 }
